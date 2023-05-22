@@ -104,7 +104,7 @@ func main() {
 		WithLimit(&pageLimit)
 
 	// additional `authInfo` is `nil` because the API token has already been specified in the client 
-	res, err := w.netbox.Virtualization.VirtualizationVirtualMachinesList(req, nil)
+	res, err := c.netbox.Virtualization.VirtualizationVirtualMachinesList(req, nil)
 
 	if err != nil {
 		log.Fatal(err)
